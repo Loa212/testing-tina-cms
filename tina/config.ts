@@ -24,9 +24,9 @@ export default defineConfig({
   schema: {
     collections: [
       {
-        name: "post",
-        label: "Posts",
-        path: "content/posts",
+        name: "blog",
+        label: "Blog Posts",
+        path: "src/content/posts",
         fields: [
           {
             type: "string",
@@ -34,6 +34,30 @@ export default defineConfig({
             label: "Title",
             isTitle: true,
             required: true,
+          },
+          {
+            type: "string",
+            name: "description",
+            label: "Description",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "pubDate",
+            label: "Publication Date",
+            required: true,
+          },
+          {
+            type: "datetime",
+            name: "updatedDate",
+            label: "Updated Date",
+            required: false,
+          },
+          {
+            type: "image",
+            name: "heroImage",
+            label: "Hero Image",
+            required: false,
           },
           {
             type: "rich-text",
