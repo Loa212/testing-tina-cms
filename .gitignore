@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+# tina local posts
+content/
+
 # dependencies
 node_modules/
 
@@ -19,3 +22,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+node_modules
